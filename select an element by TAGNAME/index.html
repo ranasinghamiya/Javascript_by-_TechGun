@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select an element by "TAG NAME"</title>
+  </head>
+  <body>
+    <h1>Select an element by "TAG NAME"</h1>
+    <ul>
+      <li class="cl">list 1</li>
+      <li id="first">list 2</li>
+      <li class="cl">list 3</li>
+    </ul>
+    <h2>heading1</h2>
+    <div id="div1">
+      <p>paragraph1</p>
+      <h2>heading2</h2>
+      <p>paragraph2</p>
+      <h2>heading3</h2>
+      <p>paragraph3</p>
+    </div>
+    <script>
+      let div1 = document.getElementById("div1");
+      let elm = div1.getElementsByTagName("h2");
+      //console.log(elm.length);
+      //console.log(elm);
+      //elm.innerHTML="<p>Hello</p>";
+      for (let i = 0; i < elm.length; i++) {
+        elm[i].innerHTML = "Hello";
+      }
+    </script>
+  </body>
+</html>

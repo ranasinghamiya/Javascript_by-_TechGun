@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create and Append Element</title>
+</head>
+<body>
+    <h2>Create and Append Element</h2>
+    <div id="intro">
+        <p id="p1">Hello this is a p tag</p>
+    </div>
+    <script>
+        let elm=document.getElementById("intro");
+        let h1= document.createElement('h1');
+        h1.id="intro1";
+        h1.className='try pi';
+        let text=document.createTextNode('This is a h1 tag');
+        h1.appendChild(text);
+        h1.textContent='content added';
+        //elm.appendChild(h1);
+        let body=document.body.appendChild(h1);
+        let pra=document.getElementById("p1");
+        console.log(pra.textContent);
+    </script>
+</body>
+</html>
